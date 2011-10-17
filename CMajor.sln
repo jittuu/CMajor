@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMajor", "CMajor\CMajor.csproj", "{FDDB32BE-5FF1-4A34-85EB-E5C75EB65987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMajor.Tests", "CMajor.Tests\CMajor.Tests.csproj", "{AAE55435-FAE2-4B81-BB25-E579ECC24469}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDDB32BE-5FF1-4A34-85EB-E5C75EB65987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDB32BE-5FF1-4A34-85EB-E5C75EB65987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDB32BE-5FF1-4A34-85EB-E5C75EB65987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDB32BE-5FF1-4A34-85EB-E5C75EB65987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE55435-FAE2-4B81-BB25-E579ECC24469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE55435-FAE2-4B81-BB25-E579ECC24469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE55435-FAE2-4B81-BB25-E579ECC24469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE55435-FAE2-4B81-BB25-E579ECC24469}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
