@@ -1,7 +1,10 @@
 ﻿using System.Web.Mvc;
+using Ninject;
 
 namespace CMajor.Infrastructure {
     public class UnitOfWorkAttribute : ActionFilterAttribute {
+
+        [Inject]
         public IUnitOfWork UnitOfWork { get; set; }
 
         public override void OnActionExecuted(ActionExecutedContext filterContext) {

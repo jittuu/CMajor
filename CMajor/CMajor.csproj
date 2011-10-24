@@ -41,6 +41,9 @@
       <HintPath>..\packages\EntityFramework.4.1.10715.0\lib\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.2.2.1.4\lib\net40-Full\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -61,6 +64,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\NinjectBootstrapper.cs" />
+    <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
+    <Compile Include="Infrastructure\NinjectFilterAttributeFilterProvider.cs" />
     <Compile Include="Infrastructure\UnitOfWorkAttribute.cs" />
     <Compile Include="Models\CMajorDbContext.cs" />
     <Compile Include="Models\DatabaseInitializer.cs" />

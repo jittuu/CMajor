@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Web.Mvc;
 using System.Web.Routing;
+using CMajor.Infrastructure;
 using CMajor.Models;
 
 namespace CMajor {
@@ -28,6 +29,9 @@ namespace CMajor {
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            // initialize dependency injection.
+            NinjectBootstrapper.Init();
 
             Database.SetInitializer(new DatabaseInitializer());
         }
