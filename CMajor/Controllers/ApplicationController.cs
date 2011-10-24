@@ -1,6 +1,8 @@
 ﻿using System.Web.Mvc;
+using CMajor.Infrastructure;
 
-namespace CMajor.Controllers {    
+namespace CMajor.Controllers {
+    [UnitOfWork]
     public abstract class ApplicationController : Controller {        
     }
 }

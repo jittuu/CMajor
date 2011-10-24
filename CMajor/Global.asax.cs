@@ -1,5 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using System.Data.Entity;
+using System.Web.Mvc;
 using System.Web.Routing;
+using CMajor.Models;
 
 namespace CMajor {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -26,6 +28,8 @@ namespace CMajor {
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            Database.SetInitializer(new DatabaseInitializer());
         }
     }
 }
