@@ -10,7 +10,7 @@ namespace CMajor {
 
     public class MvcApplication : System.Web.HttpApplication {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters) {
-            filters.Add(new HandleErrorAttribute());
+            filters.Add(new ElmahHandleErrorAttribute());
         }
 
         public static void RegisterRoutes(RouteCollection routes) {
