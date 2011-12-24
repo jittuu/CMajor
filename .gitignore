@@ -5,3 +5,5 @@
 *.docstates
 packages/
 App_Data
+*.cache
+*.local.xml
