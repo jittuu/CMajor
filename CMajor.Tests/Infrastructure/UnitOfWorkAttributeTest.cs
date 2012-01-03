@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Xunit;
+using System.Web.Mvc;
 using CMajor.Infrastructure;
 using Moq;
-using System.Web.Mvc;
+using Xunit;
 
 namespace CMajor.Tests.Infrastructure {
     public class UnitOfWorkAttributeTest {
