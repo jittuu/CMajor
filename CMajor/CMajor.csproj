@@ -63,6 +63,7 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AlbumsController.cs" />
     <Compile Include="Controllers\ApplicationController.cs" />
     <Compile Include="Controllers\ArtistsController.cs" />
     <Compile Include="Controllers\ErrorsController.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Infrastructure\NinjectFilterAttributeFilterProvider.cs" />
     <Compile Include="Infrastructure\UnitOfWorkAttribute.cs" />
+    <Compile Include="Models\Album.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\CMajorDbContext.cs" />
     <Compile Include="Models\DatabaseInitializer.cs" />
@@ -134,6 +136,12 @@
     <Content Include="Views\Artists\Delete.cshtml" />
     <Content Include="Views\Artists\Index.cshtml" />
     <Content Include="Views\Artists\_CreateOrEdit.cshtml" />
+    <None Include="CodeTemplates\Scaffolders\MvcScaffolding.Controller\ControllerWithContext.cs.t4" />
+    <Content Include="Views\Albums\Create.cshtml" />
+    <Content Include="Views\Albums\Edit.cshtml" />
+    <Content Include="Views\Albums\Delete.cshtml" />
+    <Content Include="Views\Albums\Index.cshtml" />
+    <Content Include="Views\Albums\_CreateOrEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

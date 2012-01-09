@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlwaysCreateDatabaseAttribute.cs" />
+    <Compile Include="Controllers\AlbumsControllerTest.cs" />
     <Compile Include="Controllers\ApplicationControllerTest.cs" />
     <Compile Include="Controllers\ArtistsControllerTest.cs" />
     <Compile Include="Controllers\ErrorsControllerTest.cs" />
