@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ApplicationController.cs" />
+    <Compile Include="Controllers\ArtistsController.cs" />
     <Compile Include="Controllers\ErrorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -75,6 +76,7 @@
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Infrastructure\NinjectFilterAttributeFilterProvider.cs" />
     <Compile Include="Infrastructure\UnitOfWorkAttribute.cs" />
+    <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\CMajorDbContext.cs" />
     <Compile Include="Models\DatabaseInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -127,6 +129,11 @@
     <None Include="CodeTemplates\AddView\CSHTML\List.tt" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\404.cshtml" />
+    <Content Include="Views\Artists\Create.cshtml" />
+    <Content Include="Views\Artists\Edit.cshtml" />
+    <Content Include="Views\Artists\Delete.cshtml" />
+    <Content Include="Views\Artists\Index.cshtml" />
+    <Content Include="Views\Artists\_CreateOrEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
