@@ -15,7 +15,7 @@ namespace CMajor.Models {
         public string MyanmarTitle { get; set; }
 
         [Required]
-        public string Content { get; set; }
+        public string Lyric { get; set; }
 
         public ICollection<Album> Albums { get; set; }
 
