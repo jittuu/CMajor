@@ -13,5 +13,7 @@ namespace CMajor.Models {
 
         [Required]
         public string MyanmarName { get; set; }
+
+        public ICollection<Song> Songs { get; set; }
     }
 }

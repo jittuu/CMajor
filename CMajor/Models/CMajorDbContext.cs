@@ -8,6 +8,8 @@ namespace CMajor.Models {
 
         public DbSet<Album> Albums { get; set; }
 
+        public DbSet<Song> Songs { get; set; }
+
         public int Commit() {
             return this.SaveChanges();
         }
