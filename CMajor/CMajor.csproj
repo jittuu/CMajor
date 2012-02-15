@@ -92,6 +92,7 @@
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Infrastructure\NinjectFilterAttributeFilterProvider.cs" />
     <Compile Include="Infrastructure\UnitOfWorkAttribute.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Album.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\CMajorDbContext.cs" />
