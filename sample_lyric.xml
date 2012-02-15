@@ -1,0 +1,41 @@
+<music>
+    <key mode="major">
+        C
+    </key>
+    <time>
+        <duration>4</duration>
+        <beats>4</beats>
+        <beat-type>4</beat-type>
+    </time>
+    <parts>
+        <part id="Intro">
+            <measure>
+                <chord>                    
+                    <root>C</root>
+                    <modifier></modifier>
+                    <duration>4</duration>
+                </chord>
+                <lyric rest="true">
+                    <duration>2</duration>
+                </lyric>
+                <lyric>
+                    <duration>2</duration>
+                    <text>I'll there for you.</text>
+                </lyric>
+            </measure>
+            <measure></measure>
+            <measure></measure>
+            <measure></measure>
+            <measure></measure>
+            <measure></measure>
+        </part>
+        <part id="V1"></part>
+        <part id="V2"></part>
+        <part id="Cho"></part>
+        <part id="Solo"></part>
+        <part ref="V1" />
+        <part ref="Cho" />
+        <part ref="Solo" />
+        <part ref="Cho" Key="D" />
+    </parts>
+</music>
