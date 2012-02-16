@@ -23,12 +23,5 @@ namespace CMajor.Controllers {
                 return this._context;
             }
         }
-
-        protected DbSet<Artist> Artists {
-            get {
-                return this._context.Artists;
-            }
-        }
-
     }
 }

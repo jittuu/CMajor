@@ -16,7 +16,7 @@ namespace CMajor.Controllers {
         //
         // GET: /Artists/
         public ViewResult Index() {
-            return View(Artists.ToArray());
+            return View(DbContext.Artists.ToArray());
         }
 
         //
@@ -30,7 +30,7 @@ namespace CMajor.Controllers {
         [HttpPost]
         public ActionResult Create(Artist artist) {
             if (ModelState.IsValid) {
-                Artists.Add(artist);
+                DbContext.Artists.Add(artist);
                 return RedirectToAction("Index");
             }
 
@@ -40,7 +40,7 @@ namespace CMajor.Controllers {
         //
         // GET: /Artists/Edit/5
         public ActionResult Edit(int id) {
-            Artist artist = Artists.Single(x => x.Id == id);
+            Artist artist = DbContext.Artists.Single(x => x.Id == id);
             return View(artist);
         }
 
@@ -58,7 +58,7 @@ namespace CMajor.Controllers {
         //
         // GET: /Artists/Delete/5
         public ActionResult Delete(int id) {
-            var artist = Artists.Single(x => x.Id == id);
+            var artist = DbContext.Artists.Single(x => x.Id == id);
             return View(artist);
         }
 
@@ -66,8 +66,8 @@ namespace CMajor.Controllers {
         // POST: /Artists/Delete/5
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id) {
-            var artist = Artists.Single(x => x.Id == id);
-            Artists.Remove(artist);
+            var artist = DbContext.Artists.Single(x => x.Id == id);
+            DbContext.Artists.Remove(artist);
             return RedirectToAction("Index");
         }
     }
