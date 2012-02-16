@@ -1,0 +1,273 @@
+<music>
+    <key mode="major">
+        D
+    </key>
+    <time>
+        <duration>4</duration>
+        <beats>4</beats>
+        <beat-type>4</beat-type>
+    </time>
+    <parts>
+        <part id="Intro">
+            <measure>				
+				<chord id="1">                    
+					<root>D</root>						
+					<duration>4</duration>
+				</chord>				                
+            </measure>
+            <measure>				
+				<chord id="2">                    
+					<root>A</root>						
+					<duration>4</duration>
+				</chord>				                
+            </measure>
+            <measure>				
+				<chord id="3">
+					<root>B</root>						
+					<modifier>m</modifier>
+					<duration>4</duration>
+				</chord>				                
+            </measure>
+            <measure>				
+				<chord id="4">
+					<root>G</root>											
+					<duration>4</duration>
+				</chord>				                
+            </measure>
+        </part>
+        <part ref="intro" />
+        
+        <part id="V1">
+			<measure>
+				<chord ref="1" />					
+				<lyric>
+					<duration>4</duration>
+					<text>မင္းရဲ႕အနမ္းတစ္ရွိဳက္</text>					
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="2" />
+				<lyric>
+					<duration>4</duration>
+					<text>နဲ႔ ငါ႔ရဲ႕အနမ္းတစ္ရွိဳက္</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="3" />
+				<lyric>
+					<duration>4</duration>
+					<text>နဲ႔ ခံစားခ်က္တူ</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="4" />
+				<lyric>
+					<duration>4</duration>
+					<text>ညီ ရွိခဲ့တဲ့</text>
+				</lyric>
+			</measure>
+        </part>
+        
+        <part id="V2">
+			<measure>
+				<chord ref="1" />
+				<lyric>
+					<duration>4</duration>
+					<text>ေနာက္ ငါ့ရဲ႕အေတြးမ်ား</text>					
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="2" />
+				<lyric>
+					<duration>4</duration>
+					<text>နဲ႔ ငါ့ရဲ႕အေတြးမ်ား</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="3" />
+				<lyric>
+					<duration>4</duration>
+					<text>နဲ႔ အနာဂတ္သစ္တူ</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="4" />
+				<lyric>
+					<duration>4</duration>
+					<text>ညီ ထားခဲ့တဲ့ေနာက္</text>
+				</lyric>
+			</measure>
+        </part>
+        
+        <part id="Pre">
+			<measure>
+				<chord ref="1" />
+				<lyric>
+					<duration>4</duration>
+					<text>ေတာ့ ခမ္းနားျခင္းကင္း</text>					
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="2" />
+				<lyric>
+					<duration>4</duration>
+					<text>မဲ့ အရုိးသားဆုံး အခ်စ္တစ္</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="3" />
+				<lyric>
+					<duration>4</duration>
+					<text>ခု ငါတုိ႔ႏွစ္ေယာက္ ကိုယ္</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="4" />
+				<lyric>
+					<duration>4</duration>
+					<text>တုိင္ ေရြးထားခဲ့</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="1" />
+				<lyric>
+					<text>ၿပီး သေဘာထားမ်ားအျပည့္</text>
+					<duration>4</duration>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="2" />
+				<lyric>
+					<duration>4</duration>
+					<text>နဲ႔ ဆူးလမ္းမ်ားနင္း</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="3" />
+				<lyric>
+					<duration>4</duration>
+					<text>ျဖတ္ ဘာျဖစ္ျဖစ္ပါ</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="4" />
+				<lyric>
+					<duration>4</duration>
+					<text>ကြယ္ ခရီးမ်ားအဆုံးထိ</text>
+				</lyric>
+			</measure>
+        </part>
+        
+        <part id="Cho">
+			<measure>
+				<chord ref="1" />
+				<lyric>
+					<duration>4</duration>
+					<text>ေလွ်ာက္ အဆုိးမ်ားၾကံဳၾကိဳက္တုန္း</text>					
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="2" />
+				<lyric>
+					<duration>4</duration>
+					<text>မွာ ဒုကၡေတြဟာ ခဏ</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="3" />
+				<lyric>
+					<duration>4</duration>
+					<text>ပါ အနမ္းမ်ားကို အသက္သြင္း</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="4" />
+				<lyric>
+					<duration>4</duration>
+					<text>ကာ ခရီးမ်ားအဆုံးထိ</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="1" />
+				<lyric>
+					<duration>4</duration>
+					<text>ေလွ်ာက္ လက္ေတြ႕ဟာ ရင္ဘတ္</text>					
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="2" />
+				<lyric>
+					<duration>4</duration>
+					<text>မွာ လမ္းဆုံးဟာ ခဏေလး</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="3" />
+				<lyric>
+					<duration>4</duration>
+					<text>ပါ အနမ္းမ်ားကို အသက္သြင္း</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="4" />
+				<lyric>
+					<duration>4</duration>
+					<text>ကာ ခရီးမ်ားအဆုံးထိ</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="1" />
+				<lyric>
+					<duration>4</duration>
+					<text>ေလွ်ာက္ အား...</text>					
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="2" />
+				<lyric>
+					<duration>4</duration>
+					<text>အာ.. ခရီးမ်ားအဆုံးထိ</text>					
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="3" />
+				<lyric>
+					<duration>4</duration>
+					<text>ေလွ်ာက္ </text>					
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="4" />
+				<lyric>
+					<duration>4</duration>
+					<text>ခရီးမ်ားအဆုံးထိ</text>					
+				</lyric>
+			</measure>
+        </part>
+        
+        <part id="Solo">
+			<measure>
+				<chord ref="1" />
+				<lyric>
+					<duration>4</duration>
+					<text>ေလွ်ာက္</text>
+				</lyric>
+			</measure>
+			<measure>
+				<chord ref="2" />
+			</measure>
+			<measure>
+				<chord ref="3" />
+			</measure>
+			<measure>
+				<chord ref="4" />
+			</measure>
+        </part>
+        
+        <part ref="V1" />
+        <part ref="V2" />
+        <part ref="Pre" />
+        <part ref="Cho" />
+        <part ref="Solo" />        
+    </parts>
+</music>
