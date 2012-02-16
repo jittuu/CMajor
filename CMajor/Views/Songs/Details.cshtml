@@ -1,0 +1,32 @@
+@model CMajor.Models.Song
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Song</legend>
+
+    <div class="display-label">Title</div>
+    <div class="display-field">@Model.Title</div>
+
+    <div class="display-label">MyanmarTitle</div>
+    <div class="display-field">@Model.MyanmarTitle</div>
+
+    <div class="display-label">Lyric</div>
+    <div class="display-field">@Model.Lyric</div>
+
+    <div class="display-label">Albums</div>
+    <div class="display-field">@(Model.Albums == null ? "None" : Model.Albums.Count.ToString())</div>
+
+    <div class="display-label">Artists</div>
+    <div class="display-field">@(Model.Artists == null ? "None" : Model.Artists.Count.ToString())</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

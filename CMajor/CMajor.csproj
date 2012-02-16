@@ -83,6 +83,7 @@
     <Compile Include="Controllers\ArtistsController.cs" />
     <Compile Include="Controllers\ErrorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SongsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -159,6 +160,12 @@
     <Content Include="Views\Albums\Delete.cshtml" />
     <Content Include="Views\Albums\Index.cshtml" />
     <Content Include="Views\Albums\_CreateOrEdit.cshtml" />
+    <Content Include="Views\Songs\Create.cshtml" />
+    <Content Include="Views\Songs\Edit.cshtml" />
+    <Content Include="Views\Songs\Delete.cshtml" />
+    <Content Include="Views\Songs\Details.cshtml" />
+    <Content Include="Views\Songs\Index.cshtml" />
+    <Content Include="Views\Songs\_CreateOrEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
