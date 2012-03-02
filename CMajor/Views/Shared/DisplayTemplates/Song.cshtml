@@ -1,0 +1,23 @@
+﻿@model CMajor.Models.Song
+<div class="song">
+  <h2>
+    <i class="icon-music"></i>
+    @Html.ActionLink(Model.MyanmarTitle, "Details", new { id = Model.Id })
+  </h2>
+  <ul class="artists">
+    @foreach (var artist in Model.Artists) {
+      <li>
+        <i class="icon-user"></i>        
+        @Html.ActionLink(artist.MyanmarName, "Details", new { controller = "Artists", id = artist.Id })
+      </li>
+    }
+  </ul>
+  <ul class="albums">
+    @foreach (var album in Model.Albums) {
+      <li>
+        <i class="icon-book"></i>        
+        @Html.ActionLink(album.MyanmarName, "Details", new { controller = "Albums", id = album.Id });
+      </li>  
+    }    
+  </ul>
+</div>

@@ -4,56 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Songs</h2>
+<hr />
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table>
-    <tr>
-        <th></th>
-        <th>
-            Title
-        </th>
-        <th>
-            MyanmarTitle
-        </th>
-        <th>
-            Lyric
-        </th>
-        <th>
-            Albums
-        </th>
-        <th>
-            Artists
-        </th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-        <td>
-			@item.Title
-        </td>
-        <td>
-			@item.MyanmarTitle
-        </td>
-        <td>
-			@item.Lyric
-        </td>
-        <td>
-			@(item.Albums == null ? "None" : item.Albums.Count.ToString())
-        </td>
-        <td>
-			@(item.Artists == null ? "None" : item.Artists.Count.ToString())
-        </td>
-    </tr>
-}
-
-</table>
-
-
+@Html.DisplayFor(model => this.Model);
