@@ -1,95 +1,95 @@
 ﻿body
-{ 
-    font-family: "lucida grande","Segoe UI", Arial, Helvetica, sans-serif;
-    background: #F7F7F7 url(images/bg_texture.jpg) repeat scroll 0px 0px;
-    padding-top: 30px;
+{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #F7F7F7 url(images/bg_texture.jpg) repeat scroll 0px 0px;
+  padding-top: 30px;
 }
 
 hr
 {
-    background: #B3B3B3;
-    border: none;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.075);
-    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.075);
-    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.075);
-    color: #B3B3B3;
-    height: 1px;
+  background: #B3B3B3;
+  border: none;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.075);
+  color: #B3B3B3;
+  height: 1px;
 }
 
 /* header */
 #header
 {
-    height: 115px;
-    position: relative;
+  height: 115px;
+  position: relative;
 }
 
 #header > div
 {
-    display: inline-block;
+  display: inline-block;
 }
 
 #header-logo a
 {
-    text-indent: -99999em;
-    background: transparent url('images/guitar.jpg') no-repeat 0 0;
-    display: block;
-    width: 100px;
-    height: 100px;
+  text-indent: -99999em;
+  background: transparent url('images/guitar.jpg') no-repeat 0 0;
+  display: block;
+  width: 100px;
+  height: 100px;
 }
 
 #header-nav
 {
-    bottom: 25px;
-    float: right;
-    right: 0;
-    position: absolute;
+  bottom: 25px;
+  float: right;
+  right: 0;
+  position: absolute;
 }
 
 #header-nav li
 {
-    list-style: none;
-    display: block;
-    float: left;
+  list-style: none;
+  display: block;
+  float: left;
 }
 
 #header-nav a
 {
-    border: 1px solid transparent;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    color: #333;
-    display: block;
-    font-size: 20px;
-    margin-left: 10px;
-    padding: 5px 10px;
-    text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: #333;
+  display: block;
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
 }
 
 #header-nav a:hover
 {
-    background: #D1E1E6 url(/images/gradient.png) bottom left repeat-x;
-    border-color: #B3B3B3;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  background: #D1E1E6 url(/images/gradient.png) bottom left repeat-x;
+  border-color: #B3B3B3;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* search */
 form.form-search
 {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 form.form-search input[type=text]
 {
-    height: 28px;
+  height: 28px;
 }
 
 form.form-search button[type=submit]
 {
-    width: 100px;
-    margin-left: 15px;
+  width: 100px;
+  margin-left: 15px;
 }
 
 /* content */
@@ -97,7 +97,7 @@ form.form-search button[type=submit]
 div.song
 {
   background-color: whiteSmoke;
-  text-shadow: 0 1px 0 white;  
+  text-shadow: 0 1px 0 white;
   border: 1px solid rgba(0, 0, 0, .1);
   position: relative;
   margin-bottom: 10px;
@@ -113,23 +113,40 @@ div.song
 
 div.song h2
 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-div.song h2 i
+div.song h2 i, li i
 {
-    margin-top: 3px;
-    margin-right: 5px;
+  margin: 3px 2px;
 }
 
 div.song h2 a
 {
-    text-decoration: none;
-    color: Black;
+  text-decoration: none;
+  color: Black;
+}
+
+div.song ul.artists li, div.song ul.albums li
+{
+  margin: 0px;
 }
 
 ul.artists, ul.albums
 {
-    list-style-type: none;
-    display: inline-block;
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px 20px 0px 0px;
+}
+
+/* sidebar */
+
+div.sidebar h2
+{
+  margin-bottom: 20px;
+}
+
+ul.artists li, ul.albums li
+{
+  margin: 5px 0px;
 }
