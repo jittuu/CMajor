@@ -51,7 +51,7 @@ namespace CMajor.Tests.Controllers {
         [Fact]
         [AlwaysCreateDatabase]
         public void Test_songs_create_should_create_new_song_and_redirect_to_index() {
-            var result = Controller.Create(new Song() { Title = "title", MyanmarTitle = "mm_title", Lyric = "Lyric" });
+            var result = Controller.Create(new CreateOrEditSongViewModel() { Title = "title", MyanmarTitle = "mm_title", Lyric = "Lyric" });
 
             // need to commit since we used UnitOfWorkAttribute in production
             DbContext.Commit();
@@ -70,7 +70,7 @@ namespace CMajor.Tests.Controllers {
         [AlwaysCreateDatabase]
         public void Test_songs_create_should_return_view_if_modal_is_invalid() {
             Controller.ModelState.AddModelError("*", new Exception());
-            var result = Controller.Create(new Song() { Title = "song", MyanmarTitle = "mm_song" });
+            var result = Controller.Create(new CreateOrEditSongViewModel() { Title = "song", MyanmarTitle = "mm_song" });
 
             Assert.IsType<ViewResult>(result);
         }

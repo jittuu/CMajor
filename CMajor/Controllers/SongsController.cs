@@ -38,18 +38,35 @@ namespace CMajor.Controllers
 
         public ActionResult Create()
         {
-            return View();
+            var viewModel = new CreateOrEditSongViewModel() {
+                Albums = new MultiSelectList(DbContext.Albums.ToArray(), "Id", "MyanmarName"),
+                Artists = new MultiSelectList(DbContext.Artists.ToArray(), "Id", "MyanmarName")
+            };
+            return View(viewModel);
         } 
 
         //
         // POST: /Songs/Create
 
         [HttpPost]
-        public ActionResult Create(Song song)
+        public ActionResult Create(CreateOrEditSongViewModel song)
         {
             if (ModelState.IsValid)
             {
-                DbContext.Songs.Add(song);
+                var newSong = new Song() { 
+                    Title = song.Title,
+                    MyanmarTitle = song.MyanmarTitle,
+                    Lyric = song.Lyric
+                };
+
+                if (song.AlbumIds != null && song.AlbumIds.Any()) {
+                    newSong.Albums = DbContext.Albums.Where(a => song.AlbumIds.Contains(a.Id)).ToArray();
+                }
+                if (song.ArtistIds != null && song.ArtistIds.Any()) {
+                    newSong.Artists = DbContext.Artists.Where(a => song.ArtistIds.Contains(a.Id)).ToArray();
+                }
+
+                DbContext.Songs.Add(newSong);
                 return RedirectToAction("Index");  
             }
 
@@ -62,7 +79,15 @@ namespace CMajor.Controllers
         public ActionResult Edit(int id)
         {
             Song song = DbContext.Songs.Single(x => x.Id == id);
-            return View(song);
+            var viewModel = new CreateOrEditSongViewModel() {
+                Albums = new MultiSelectList(DbContext.Albums.ToArray(), "Id", "MyanmarName"),
+                Artists = new MultiSelectList(DbContext.Artists.ToArray(), "Id", "MyanmarName"),
+                Id = song.Id,
+                Title = song.Title,
+                MyanmarTitle = song.MyanmarTitle,
+                Lyric = song.Lyric
+            };
+            return View(viewModel);
         }
 
         //

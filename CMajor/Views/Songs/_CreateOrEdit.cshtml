@@ -1,4 +1,4 @@
-@model CMajor.Models.Song
+@model CreateOrEditSongViewModel
 
 @* This partial view defines form fields that will appear when creating and editing entities *@
 
@@ -26,3 +26,13 @@
     @Html.ValidationMessageFor(model => model.Lyric)
 </div>
 
+<div>
+
+@*@Html.CheckBoxList("albumIds", Model.Albums)
+
+@Html.CheckBoxList("artistIds", Model.Artists)*@
+
+@Html.ListBox("albumIds", Model.Albums)
+
+@Html.ListBox("artistIds", Model.Artists)
+</div>

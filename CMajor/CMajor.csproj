@@ -87,6 +87,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CheckListBoxExtensions.cs" />
     <Compile Include="Infrastructure\ElmahHandleErrorAttribute.cs" />
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\NinjectBootstrapper.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Models\Album.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\CMajorDbContext.cs" />
+    <Compile Include="Models\CreateOrEditSongViewModel.cs" />
     <Compile Include="Models\DatabaseInitializer.cs" />
     <Compile Include="Models\Song.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
