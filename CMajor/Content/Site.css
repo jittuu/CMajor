@@ -1,5 +1,6 @@
 ﻿body
 { 
+    font-family: "lucida grande","Segoe UI", Arial, Helvetica, sans-serif;
     background: #F7F7F7 url(images/bg_texture.jpg) repeat scroll 0px 0px;
     padding-top: 30px;
 }
@@ -89,4 +90,46 @@ form.form-search button[type=submit]
 {
     width: 100px;
     margin-left: 15px;
+}
+
+/* content */
+
+div.song
+{
+  background-color: whiteSmoke;
+  text-shadow: 0 1px 0 white;  
+  border: 1px solid rgba(0, 0, 0, .1);
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 16px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  padding: 12px;
+}
+
+div.song h2
+{
+    font-size: 16px;
+}
+
+div.song h2 i
+{
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+div.song h2 a
+{
+    text-decoration: none;
+    color: Black;
+}
+
+ul.artists, ul.albums
+{
+    list-style-type: none;
+    display: inline-block;
 }
