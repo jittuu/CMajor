@@ -16,7 +16,7 @@
     @foreach (var album in Model.Albums) {
       <li>
         <i class="icon-book"></i>        
-        @Html.ActionLink(album.MyanmarName, "Details", new { controller = "Albums", id = album.Id });
+        @Html.ActionLink(album.MyanmarName, "Details", new { controller = "Albums", id = album.Id })
       </li>  
     }    
   </ul>

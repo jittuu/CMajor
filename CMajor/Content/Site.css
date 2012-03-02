@@ -109,6 +109,8 @@ div.song
   -moz-background-clip: padding;
   background-clip: padding-box;
   padding: 12px;
+  display: inline-block;
+  width: 350px; /* span4 */
 }
 
 div.song h2
